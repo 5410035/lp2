@@ -1,8 +1,7 @@
 /* 可変レイアウト
 ------------------------------------------ */
 html {
-	font-size: calc(10 * 100vw / 375);
-	scroll-behavior: smooth;
+	font-size: calc(10 * 100vw / 390);
 }
 
 @media (min-width:768px) {
@@ -23,11 +22,11 @@ body {
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 400;
 	line-height: 1.75;
-	color: #333;
+	color: #000;
 }
 
 a {
-	color: #333;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -51,4 +50,346 @@ img {
 
 ul {
 	list-style: none;
+}
+
+/* ヘッダー
+------------------------------------------ */
+
+
+/* カバー
+------------------------------------------ */
+.cover {
+	width: 39rem;
+	height: 45rem;
+}
+
+
+@media (min-width: 768px) {
+	.cover {
+		height: 72rem;
+	}
+}
+
+.cover__image {
+	background-image: url("../image/cover_main_sp_01.png");
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.cover__image {
+		background-image: url("../image/cover_main_pc_01.png");
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+.header {
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+	.header {
+		text-align: center;
+		letter-spacing: 1px;
+	}
+}
+
+.header__text {
+	font-family: 'Marcellus', sans-serif;
+	font-weight: 400;
+	font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+	.header__text {
+		font-family: 'Marcellus', sans-serif;
+		font-weight: 400;
+		font-size: 2.8rem;
+	}
+}
+
+.cover__text-first {
+	font-family: 'Marcellus', sans-serif;
+	font-weight: 400;
+	font-size: 4.1rem;
+}
+
+@media (min-width: 768px) {
+	.cover__text-first {
+		font-family: 'Marcellus', sans-serif;
+		font-weight: 400;
+		font-size: 5rem;
+	}
+}
+
+.cover__text-second {
+	font-family: 'Marcellus', sans-serif;
+	font-weight: 400;
+	font-size: 4.1rem;
+}
+
+@media (min-width: 768px) {
+	.cover__text-second {
+		font-family: 'Marcellus', sans-serif;
+		font-weight: 400;
+		font-size: 5rem;
+	}
+}
+
+.cover__text-third {
+	font-family: 'Noto Serif JP', sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+	.cover__text-third {
+		font-family: 'Noto Serif JP', sans-serif;
+		font-weight: 400;
+		font-size: 2.5rem;
+	}
+}
+
+/* ボタン
+------------------------------------------ */
+.button {
+	display: block;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+	text-align: center;
+}
+
+
+.button__wrapper {
+	background-color: #F0F4FF;
+}
+
+.button__text-title {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 600;
+	font-size: 1.8rem;
+}
+
+@media (min-width: 768px) {
+	.button__text-title {
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 600;
+		font-size: 2.4rem;
+	}
+}
+
+.button__text-price {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+	.button__text-price {
+		font-family: 'Noto Sans JP', sans-serif;
+		font-weight: 400;
+		font-size: 1.6rem;
+	}
+}
+
+.button__shop {
+	display: block;
+	border-radius: 2.9rem;
+	width: 30rem;
+	height: 5.8rem;
+	background-color: #46C4DB;
+	text-align: center;
+	position: relative;
+	padding-top: 1rem;
+	font-size: 1.8rem;
+	color: #fff;
+	font-family: "Noto serif JP", serif;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button__buy {
+	display: block;
+	border-radius: 2.9rem;
+	width: 30rem;
+	height: 5.8rem;
+	background-color: #5DD5AB;
+	text-align: center;
+	position: relative;
+	padding-top: 1rem;
+	font-size: 1.8rem;
+	color: #fff;
+	font-family: "Noto serif JP", serif;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 768px) {
+	.button__shop {
+		display: block;
+		border-radius: 2.9rem;
+		width: 30rem;
+		height: 5.8rem;
+		background-color: #46C4DB;
+		text-align: center;
+		position: relative;
+		padding-top: 1rem;
+		font-size: 1.8rem;
+		color: #fff;
+		font-family: "Noto serif JP", serif;
+		font-weight: 600;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 768px) {
+	.button__buy {
+		display: block;
+		border-radius: 2.9rem;
+		width: 30rem;
+		height: 5.8rem;
+		background-color: #5DD5AB;
+		text-align: center;
+		position: relative;
+		padding-top: 1rem;
+		font-size: 1.8rem;
+		color: #fff;
+		font-family: "Noto serif JP", serif;
+		font-weight: 600;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+/* 商品紹介
+------------------------------------------ */
+.introduction {
+	height: 68rem;
+}
+
+@media (min-width: 768px) {
+	.introduction {
+		height: 55rem;
+	}
+}
+
+.introduction__image {
+	background-image: url("../image/introduction_main_sp_01.png");
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+}
+
+@media (min-width: 768px) {
+	.introduction__image {
+		background-image: url("../image/introduction_main_pc_01.png");
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+
+
+.introduction__title-first {
+	font-family: "EB Garamond", serif;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #fff;
+	text-align: center;
+}
+
+
+@media (min-width: 768px) {
+	.introduction__title-first {
+		font-family: "EB Garamond", serif;
+		font-weight: 700;
+		font-size: 3.8rem;
+		color: #fff;
+		text-align: center;
+	}
+}
+
+.introduction__title-second {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 600;
+	font-size: 2.4rem;
+	color: #fff;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.introduction__title-second {
+		font-family: "Noto Serif JP", serif;
+		font-weight: 600;
+		font-size: 2.4rem;
+		color: #fff
+	}
+}
+
+.introduction__text {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+	.introduction__text {
+		font-family: "Noto Serif JP", serif;
+		font-weight: 400;
+		font-size: 1.4rem;
+		color: #fff;
+	}
+}
+
+/* Voices
+------------------------------------------ */
+
+.voices__title {
+	font-family: "EB Garamond", serif;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #000;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.voices__title {
+		font-family: "EB Garamond", serif;
+		font-weight: 700;
+		font-size: 4.5rem;
+		color: #000;
+	}
+}
+
+.voices__title-text {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 600;
+	font-size: 1.6rem;
+	color: #000;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.voices__title-text {
+		font-family: "Noto Serif JP", serif;
+		font-weight: 600;
+		font-size: 2rem;
+		color: #000;
+	}
 }
