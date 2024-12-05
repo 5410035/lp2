@@ -23,6 +23,9 @@
 		<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 		<!-- Smart Tab -->
 		<link href="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/css/smart_tab_all.min.css" rel="stylesheet">
+		<!--Slick-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 		<!-- CSS -->
 		<link href="assets/style/main.css" rel="stylesheet">
 	</head>
@@ -32,16 +35,19 @@
 			<!-- カバー -->
 			<div class="cover">
 				<div class="cover__image">
-					<div class="header">
-						<p class="header__text">Kira-meki</p>
+					<div class="cover__container">
+						<div class="header">
+							<img src="assets/image/cover_header_sp_01.svg" alt="">
+						</div>
+					</div>
+					<div class="cover__text">
+						<p class="cover__text-first">Kirameki</p>
+						<p class="cover__text-second">Cream</p>
+						<p class="cover__text-third">肌のうるおい、煌めく。</p>
 					</div>
 				</div>
-				<div class="cover__text">
-					<p class="cover__text-first">Kirameki</p>
-					<p class="cover__text-second">Cream</p>
-					<p class="cover__text-third">肌のうるおい、煌めく。</p>
-				</div>
 			</div>
+
 			<!-- ボタン-->
 			<div class="button">
 				<div class="button__wrapper">
@@ -71,17 +77,39 @@
 					<h1 class="voices__title">Voices</h1>
 					<p class="voices__title-text">お客様の声</p>
 				</div>
+				<!-- カルーセル -->
+				<div class="voice__slick">
+					<!-- 1枚目 -->
+					<div class="voice__slick-item">
+						<picture>
+							<source media="(min-width: 768px)" srcset="assets/image/voice_customer_pc_01.png">
+							<img src="assets/image/voice_customer_sp_01.png" alt="" class="voice__customer">
+						</picture>
+						<div class="voice__slick-text">
+							<p class="voice__slick-text-customer">Aさん</p>
+							<p class="voice__slick-text-evaluation">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+						</div>
+					</div>
+					<!-- 1枚目 -->
+					<div class="voice__slick-item">
+						<picture>
+							<source media="(min-width: 768px)" srcset="assets/image/voice_customer_pc_01.png">
+							<img src="assets/image/voice_customer_sp_01.png" alt="" class="voice__customer">
+						</picture>
+						<div class="voice__slick-text">
+							<p class="voice__slick-text-customer">Aさん</p>
+							<p class="voice__slick-text-evaluation">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
+			<!-- フッター -->
+			<footer class="footer">
+				<!-- コピーライト -->
 
-
-
-
-				<!-- フッター -->
-				<footer class="footer">
-					<!-- コピーライト -->
-
-				</footer>
+			</footer>
 
 
 
@@ -95,8 +123,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
 			integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
 			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<!-- Smart Tab -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery-smarttab@4/dist/js/jquery.smartTab.min.js"></script>
+		<!--Slick-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 		<!-- JS -->
 		<script src="assets/script/main.js"></script>
 	</body>
