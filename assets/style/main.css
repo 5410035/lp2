@@ -156,7 +156,7 @@ ul {
 
 /* ボタン
 ------------------------------------------ */
-.button {
+.cta {
 	display: block;
 	padding-left: 1.6rem;
 	padding-right: 1.6rem;
@@ -164,46 +164,46 @@ ul {
 	margin-bottom: 5rem;
 }
 
-.button__text {
+.cta__text {
 	margin-bottom: 1.7rem;
 }
 
 
-.button__wrapper {
+.cta__wrapper {
 	background-color: #F0F4FF;
 	padding-top: 1.8rem;
 	padding-bottom: 3.4rem;
 }
 
-.button__text-title {
+.cta__text-title {
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 600;
 	font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
-	.button__text-title {
+	.cta__text-title {
 		font-family: 'Noto Sans JP', sans-serif;
 		font-weight: 600;
 		font-size: 2.4rem;
 	}
 }
 
-.button__text-price {
+.cta__text-price {
 	font-family: 'Noto Sans JP', sans-serif;
 	font-weight: 400;
 	font-size: 1.4rem;
 }
 
 @media (min-width: 768px) {
-	.button__text-price {
+	.cta__text-price {
 		font-family: 'Noto Sans JP', sans-serif;
 		font-weight: 400;
 		font-size: 1.6rem;
 	}
 }
 
-.button__shop {
+.button-shop {
 	display: block;
 	border-radius: 2.9rem;
 	width: 30rem;
@@ -221,7 +221,7 @@ ul {
 	margin-bottom: 2rem;
 }
 
-.button__buy {
+.button-buy {
 	display: block;
 	border-radius: 2.9rem;
 	width: 30rem;
@@ -240,7 +240,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-	.button__shop {
+	.button-shop {
 		display: block;
 		border-radius: 2.9rem;
 		width: 30rem;
@@ -259,7 +259,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-	.button__buy {
+	.button-buy {
 		display: block;
 		border-radius: 2.9rem;
 		width: 30rem;
@@ -379,6 +379,7 @@ ul {
 	padding-top: 5.4rem;
 	padding-left: 1.6rem;
 	padding-right: 1.6rem;
+	margin-bottom: 7.3rem;
 }
 
 
@@ -401,6 +402,12 @@ ul {
 	}
 }
 
+.voices__container {
+	margin-bottom: 3.4rem;
+}
+
+
+
 .voices__title-text {
 	font-family: "Noto Serif JP", serif;
 	font-weight: 600;
@@ -419,12 +426,17 @@ ul {
 }
 
 .voice__customer {
-	margin-left: auto;
+	margin-left: 8.9rem;
 	margin-right: auto;
+	padding-top: 2.6rem;
+}
+
+.voice__slick {
+	width: 28rem;
+	margin-inline: auto;
 }
 
 .voice__slick-item {
-	max-width: 28rem;
 	height: 34.4rem;
 	margin-right: auto;
 	margin-left: auto;
@@ -436,4 +448,208 @@ ul {
 .slide-arrow next-arrow slick-arrow {
 	position: absolute;
 	left: 50rem !important;
+}
+
+.prev-arrow {
+	position: absolute;
+	top: 50%;
+	left: -3.9rem;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+
+.next-arrow {
+	position: absolute;
+	top: 50%;
+	left: 28.7rem;
+	transform: translateY(-50%);
+	z-index: 10;
+}
+
+.voice__slick-text-customer {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: #000;
+	text-align: center;
+	margin-top: 0.6rem;
+}
+
+
+@media (min-width: 768px) {
+	.voice__slick-text-customer {
+		font-family: "Noto Serif JP", serif;
+		font-weight: 400;
+		font-size: 1.5rem;
+		color: #000;
+	}
+}
+
+.voice__slick-text-evaluation {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+	color: #000;
+	margin-top: 1.7rem;
+	margin-bottom: 1.6rem;
+	line-height: 1.95
+}
+
+@media (min-width: 768px) {
+	.voice__slick-text-evaluation {
+		font-family: "Noto Serif JP", serif;
+		font-weight: 400;
+		font-size: 1.6rem;
+		color: #000;
+	}
+}
+
+
+/* よくあるご質問
+------------------------------------------ */
+
+
+.question {
+	padding-top: 2.6rem;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+	background: linear-gradient(to right, #F2FEE9, #C6F0FE);
+}
+
+.accordion_content {
+	display: none;
+}
+
+.question_title-first {
+	font-family: "EB Garamond", serif;
+	font-weight: 700;
+	font-size: 3rem;
+	color: #000;
+	text-align: center;
+}
+
+
+@media (min-width: 768px) {
+	.question_title-first {
+		font-family: "EB Garamond", serif;
+		font-weight: 700;
+		font-size: 4.5rem;
+		color: #000;
+	}
+}
+
+.question_title-second {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 600;
+	font-size: 1.6rem;
+	color: #000;
+	text-align: center;
+	line-height: 1
+}
+
+@media (min-width: 768px) {
+	.question_title-second {
+		font-family: "Noto Serif JP", serif;
+		font-weight: 600;
+		font-size: 2rem;
+		color: #000;
+	}
+}
+
+.question_title {
+	margin-bottom: 4.1rem;
+}
+
+.question_accordion {
+	background-color: #fff;
+	padding-bottom: 1.2rem;
+	margin-bottom: 2.1rem;
+}
+
+.question_accordion-title {
+	display: flex;
+	flex-direction: row;
+	padding: 1.6rem 1.6rem 0rem 1.6rem;
+	column-gap: 1.3rem;
+	line-height: 1.9;
+}
+
+.accordion_content {
+	padding: 0rem 1.6rem 1.6rem 1.6rem;
+}
+
+.accordion_content-container {
+	display: flex;
+	flex-direction: row;
+	column-gap: 1.7rem;
+}
+
+.open::before {
+	transform: rotate(-180deg);
+}
+
+.question_accordion-title-q {
+	font-family: "EB Garamond", serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #000;
+}
+
+@media (min-width: 768px) {
+	.question_accordion-title-q {
+		font-family: "EB Garamond", serif;
+		font-weight: 400;
+		font-size: 1.8rem;
+		color: #000;
+	}
+}
+
+.accordion_content-a {
+	font-family: "EB Garamond", serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #000;
+}
+
+@media (min-width: 768px) {
+	.accordion_content-a {
+		font-family: "EB Garamond", serif;
+		font-weight: 400;
+		font-size: 1.8rem;
+		color: #000;
+	}
+}
+
+.question_accordion-title-text {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #000;
+
+}
+
+@media (min-width: 768px) {
+	.question_accordion-title-text {
+		font-family: "Noto Serif JP", serif;
+		font-weight: 500;
+		font-size: 1.5rem;
+		color: #000;
+	}
+}
+
+.accordion_content-text {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 500;
+	font-size: 1.5rem;
+	color: #000;
+	line-height: 1.87;
+}
+
+@media (min-width: 768px) {
+	.accordion_content-text {
+		font-family: "Noto Serif JP", serif;
+		font-weight: 500;
+		font-size: 1.5rem;
+		color: #000;
+	}
 }

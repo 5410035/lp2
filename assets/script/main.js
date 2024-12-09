@@ -8,5 +8,13 @@ $('.voice__slick').slick({
   fade: true
 });
 
-// カルーセル
+// アコーディオン
+$('.question_accordion-title').on('click', function (e) {
 
+  // .accordion-contentを選択
+  var content = $(this).next();
+
+  // .accordion-contentを表示・非表示
+  content.slideToggle();
+  $(".question_accordion-title1-triangle").toggleClass("open", 300);
+});
