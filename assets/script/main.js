@@ -9,12 +9,52 @@ $('.voice__slick').slick({
 });
 
 // アコーディオン
-$('.question_accordion-title').on('click', function (e) {
+$('.question_accordion-title-first').on('click', function (e) {
 
   // .accordion-contentを選択
   var content = $(this).next();
 
   // .accordion-contentを表示・非表示
   content.slideToggle();
-  $(".question_accordion-title1-triangle").toggleClass("open", 300);
+  $(".question_accordion-title-triangle-first").toggleClass("open", 300);
+});
+
+$('.question_accordion-title-second').on('click', function (e) {
+
+  // .accordion-contentを選択
+  var content = $(this).next();
+
+  // .accordion-contentを表示・非表示
+  content.slideToggle();
+  $(".question_accordion-title-triangle-second").toggleClass("open", 300);
+});
+
+$('.question_accordion-title-third').on('click', function (e) {
+
+  // .accordion-contentを選択
+  var content = $(this).next();
+
+  // .accordion-contentを表示・非表示
+  content.slideToggle();
+  $(".question_accordion-title-triangle-third").toggleClass("open", 300);
+});
+
+$('.question_accordion-title-fourth').on('click', function (e) {
+
+  // .accordion-contentを選択
+  var content = $(this).next();
+
+  // .accordion-contentを表示・非表示
+  content.slideToggle();
+  $(".question_accordion-title-triangle-fourth").toggleClass("open", 300);
+});
+
+$('.question_accordion-title-fifth').on('click', function (e) {
+
+  // .accordion-contentを選択
+  var content = $(this).next();
+
+  // .accordion-contentを表示・非表示
+  content.slideToggle();
+  $(".question_accordion-title-triangle-fifth").toggleClass("open", 300);
 });

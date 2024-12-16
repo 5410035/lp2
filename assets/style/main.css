@@ -70,7 +70,7 @@ ul {
 	}
 }
 
-.cover__image {
+.cover__container {
 	background-image: url("../image/cover_main_sp_01.png");
 	height: 45rem;
 	background-position: center;
@@ -78,9 +78,9 @@ ul {
 }
 
 @media (min-width: 768px) {
-	.cover__image {
+	.cover__container {
 		background-image: url("../image/cover_main_pc_01.png");
-		height: 100%;
+		height: 72rem;
 		background-position: center;
 		background-size: cover;
 	}
@@ -88,7 +88,12 @@ ul {
 
 .header {
 	text-align: center;
-	letter-spacing: 1px;
+	padding-top: 2.9rem;
+}
+
+.cover__image {
+	margin-inline: auto;
+	display: block;
 }
 
 @media (min-width: 768px) {
@@ -112,10 +117,19 @@ ul {
 	}
 }
 
+.cover__text {
+	margin-top: 37.7rem;
+	margin-left: 2.3rem;
+	line-height: 1;
+}
+
+
 .cover__text-first {
 	font-family: 'Marcellus', sans-serif;
 	font-weight: 400;
 	font-size: 4.1rem;
+	letter-spacing: 1.23rem;
+	margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -130,6 +144,8 @@ ul {
 	font-family: 'Marcellus', sans-serif;
 	font-weight: 400;
 	font-size: 4.1rem;
+	letter-spacing: 1.22rem;
+	margin-bottom: 1.7rem;
 }
 
 @media (min-width: 768px) {
@@ -144,6 +160,7 @@ ul {
 	font-family: 'Noto Serif JP', sans-serif;
 	font-weight: 400;
 	font-size: 2rem;
+	letter-spacing: 0.6rem;
 }
 
 @media (min-width: 768px) {
@@ -513,7 +530,9 @@ ul {
 	padding-top: 2.6rem;
 	padding-left: 1.6rem;
 	padding-right: 1.6rem;
+	padding-bottom: 1.4rem;
 	background: linear-gradient(to right, #F2FEE9, #C6F0FE);
+	margin-bottom: 4.9rem;
 }
 
 .accordion_content {
@@ -562,20 +581,60 @@ ul {
 
 .question_accordion {
 	background-color: #fff;
-	padding-bottom: 1.2rem;
-	margin-bottom: 2.1rem;
+	margin-bottom: 2rem;
 }
 
-.question_accordion-title {
+.question_accordion-title-first {
 	display: flex;
 	flex-direction: row;
-	padding: 1.6rem 1.6rem 0rem 1.6rem;
+	padding: 1.6rem 1.6rem 1.6rem 1.6rem;
 	column-gap: 1.3rem;
-	line-height: 1.9;
+	line-height: 1.8666666;
+	align-items: flex-start;
 }
 
+.question_accordion-title-second {
+	display: flex;
+	flex-direction: row;
+	padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+	column-gap: 1.3rem;
+	line-height: 1.8666666;
+	align-items: flex-start;
+}
+
+.question_accordion-title-third {
+	display: flex;
+	flex-direction: row;
+	padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+	column-gap: 1.3rem;
+	line-height: 1.8666666;
+	align-items: flex-start;
+}
+
+.question_accordion-title-fourth {
+	display: flex;
+	flex-direction: row;
+	padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+	column-gap: 1.3rem;
+	line-height: 1.8666666;
+	align-items: flex-start;
+}
+
+.question_accordion-title-fifth {
+	display: flex;
+	flex-direction: row;
+	padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+	column-gap: 1.3rem;
+	line-height: 1.8666666;
+	align-items: flex-start;
+}
+
+
+
 .accordion_content {
-	padding: 0rem 1.6rem 1.6rem 1.6rem;
+	padding: 0rem 1.6rem 2.8rem 1.6rem;
+	line-height: 1.8666666;
+	margin-top: -0.3rem;
 }
 
 .accordion_content-container {
@@ -584,9 +643,6 @@ ul {
 	column-gap: 1.7rem;
 }
 
-.open::before {
-	transform: rotate(-180deg);
-}
 
 .question_accordion-title-q {
 	font-family: "EB Garamond", serif;
@@ -625,6 +681,7 @@ ul {
 	font-weight: 500;
 	font-size: 1.5rem;
 	color: #000;
+	margin-top: 0.1rem;
 
 }
 
@@ -652,4 +709,80 @@ ul {
 		font-size: 1.5rem;
 		color: #000;
 	}
+}
+
+.question_accordion-title-triangle-first {
+	margin-top: 1.4rem;
+}
+
+.question_accordion-title-triangle-second {
+	margin-top: 1.4rem;
+}
+
+.question_accordion-title-triangle-third {
+	margin-top: 1.4rem;
+}
+
+.question_accordion-title-triangle-fourth {
+	margin-top: 1.4rem;
+}
+
+.question_accordion-title-triangle-fifth {
+	margin-top: 1.4rem;
+}
+
+.open {
+	transform: rotate(-180deg);
+}
+
+
+/* フッター
+------------------------------------------ */
+.footer {
+	background-color: #0071CE;
+	padding-top: 3.1rem;
+	text-align: center;
+	padding-bottom: 2.1rem;
+}
+
+.footer__logo {
+	margin-bottom: 3rem;
+
+}
+
+.footer__container {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	column-gap: 3rem;
+	margin-bottom: 2.2rem;
+}
+
+.footer__company {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.footer__policy {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.footer__inquiry {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.footer-copyright {
+	font-family: "Noto Serif JP", serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	color: #fff;
+	text-align: center;
 }
