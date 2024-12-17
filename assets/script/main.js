@@ -58,3 +58,10 @@ $('.question_accordion-title-fifth').on('click', function (e) {
   content.slideToggle();
   $(".question_accordion-title-triangle-fifth").toggleClass("open", 300);
 });
+
+$('.voice__slick').slick({
+  autoplay:true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
