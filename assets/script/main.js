@@ -5,7 +5,7 @@ $('.voice__slick').slick({
   arrows: true,
   prevArrow: '<img src="./assets/image/voice_left_arrow_sp_01.svg" class="slide-arrow prev-arrow">',
   nextArrow: '<img src="./assets/image/voice_right_arrow_sp_01.svg" class="slide-arrow next-arrow">',
-  fade: true
+  fade: false,
 });
 
 // アコーディオン
@@ -59,9 +59,21 @@ $('.question_accordion-title-fifth').on('click', function (e) {
   $(".question_accordion-title-triangle-fifth").toggleClass("open", 300);
 });
 
-$('.voice__slick').slick({
-  autoplay:true,
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3
+$(function () {
+  $(".voice__slick").slick({
+    arrows: true,
+    autoplay: true,
+    adaptiveHeight: true,
+    dots: true,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 767.9,
+        settings: {
+          slidesToShow: 1,
+          fade: false,
+        },
+      },
+    ],
+  });
 });
