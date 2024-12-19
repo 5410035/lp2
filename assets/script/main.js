@@ -1,12 +1,3 @@
-// カルーセル
-$('.voice__slick').slick({
-  infinite: true,
-  dots: true,
-  arrows: true,
-  prevArrow: '<img src="./assets/image/voice_left_arrow_sp_01.svg" class="slide-arrow prev-arrow">',
-  nextArrow: '<img src="./assets/image/voice_right_arrow_sp_01.svg" class="slide-arrow next-arrow">',
-  fade: false,
-});
 
 // アコーディオン
 $('.question_accordion-title-first').on('click', function (e) {
@@ -66,6 +57,9 @@ $(function () {
     adaptiveHeight: true,
     dots: true,
     slidesToShow: 3,
+    fade: false,
+    prevArrow: '<img src="./assets/image/voice_left_arrow_sp_01.svg" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="./assets/image/voice_right_arrow_sp_01.svg" class="slide-arrow next-arrow">',
     responsive: [
       {
         breakpoint: 767.9,
