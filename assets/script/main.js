@@ -1,62 +1,21 @@
 
 // アコーディオン
-$('.question_accordion-title-first').on('click', function (e) {
-
-  // .accordion-contentを選択
-  var content = $(this).next();
+$('.question__accordion-title').on('click', function (e) {
 
   // .accordion-contentを表示・非表示
-  content.slideToggle();
-  $(".question_accordion-title-triangle-first").toggleClass("open", 300);
+  $(this).next().slideToggle();
+  $(this).find(".question__accordion-title-triangle").toggleClass("open", 300);
 });
 
-$('.question_accordion-title-second').on('click', function (e) {
-
-  // .accordion-contentを選択
-  var content = $(this).next();
-
-  // .accordion-contentを表示・非表示
-  content.slideToggle();
-  $(".question_accordion-title-triangle-second").toggleClass("open", 300);
-});
-
-$('.question_accordion-title-third').on('click', function (e) {
-
-  // .accordion-contentを選択
-  var content = $(this).next();
-
-  // .accordion-contentを表示・非表示
-  content.slideToggle();
-  $(".question_accordion-title-triangle-third").toggleClass("open", 300);
-});
-
-$('.question_accordion-title-fourth').on('click', function (e) {
-
-  // .accordion-contentを選択
-  var content = $(this).next();
-
-  // .accordion-contentを表示・非表示
-  content.slideToggle();
-  $(".question_accordion-title-triangle-fourth").toggleClass("open", 300);
-});
-
-$('.question_accordion-title-fifth').on('click', function (e) {
-
-  // .accordion-contentを選択
-  var content = $(this).next();
-
-  // .accordion-contentを表示・非表示
-  content.slideToggle();
-  $(".question_accordion-title-triangle-fifth").toggleClass("open", 300);
-});
 
 $(function () {
   $(".voice__slick").slick({
     arrows: true,
-    autoplay: true,
+    autoplay: false,
     adaptiveHeight: true,
     dots: true,
     slidesToShow: 3,
+    slidesToScroll: 3,
     fade: false,
     prevArrow: '<img src="./assets/image/voice_left_arrow_sp_01.svg" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="./assets/image/voice_right_arrow_sp_01.svg" class="slide-arrow next-arrow">',
@@ -65,9 +24,24 @@ $(function () {
         breakpoint: 767.9,
         settings: {
           slidesToShow: 1,
-          fade: false,
+          slidesToScroll: 1,
         },
       },
     ],
+  });
+});
+
+
+$(document).ready(function () {
+  const $topuparrow = $('.topuparrow');
+  const scrollThreshold = 200; // 指定値 (スクロール距離)
+
+  // スクロール時の処理
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > scrollThreshold) {
+      $topuparrow.fadeIn(); // フェードイン
+    } else {
+      $topuparrow.fadeOut(); // フェードアウト
+    }
   });
 });
