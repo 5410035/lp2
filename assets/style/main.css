@@ -387,7 +387,7 @@ ul {
 		height: 55rem;
 		background-position: center;
 		background-size: cover;
-		padding: 9.3rem 25.3rem 12rem 82.9rem;
+		padding: 9.3rem 2rem 12rem 59.6rem;
 	}
 }
 
@@ -456,9 +456,10 @@ ul {
 
 @media (min-width: 768px) {
 	.introduction__wrapper {
-
 		line-height: 1;
 		max-width: 41.8rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
