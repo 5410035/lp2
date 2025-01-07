@@ -7,29 +7,26 @@ $('.question__accordion-title').on('click', function (e) {
 });
 
 // アコーディオン お客様の声
-$(function () {
-  $(".voice__slick").slick({
-    arrows: true,
-    autoplay: false,
-    adaptiveHeight: true,
-    dots: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    fade: false,
-    prevArrow: '<img src="./assets/image/voice_left_arrow_sp.svg" class="slide-arrow prev-arrow" alt="前へ戻る">',
-    nextArrow: '<img src="./assets/image/voice_right_arrow_sp.svg" class="slide-arrow next-arrow"　alt="次へ進む">',
-    responsive: [
-      {
-        breakpoint: 767.9,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
+$(".voice__slick").slick({
+  arrows: true,
+  autoplay: false,
+  adaptiveHeight: true,
+  dots: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  fade: false,
+  prevArrow: '<img src="./assets/image/voice_left_arrow_sp.svg" class="slide-arrow prev-arrow" alt="前へ戻る">',
+  nextArrow: '<img src="./assets/image/voice_right_arrow_sp.svg" class="slide-arrow next-arrow"　alt="次へ進む">',
+  responsive: [
+    {
+      breakpoint: 767.9,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
       },
-    ],
-  });
+    },
+  ],
 });
-
 
 $(document).ready(function () {
   const $topuparrow = $('.topuparrow');
